@@ -1,0 +1,79 @@
+body {
+     font: small/1.6em Verdana, Helvetica, Arial, sans-serif;	 
+}
+
+#head {
+	text-align: center;
+}
+
+h1, h2 {
+	color: #007e7e;
+}
+h1 {
+  font-size: 150%;
+}
+h2 {
+	font-size: 120%;
+}
+#guarantee {
+	font: italic small/1.9em Georgia, "Times New Roman", Times, serif;
+	color: #444444;
+	background: #a7cece url(../images/background.gif) no-repeat top left;
+	border: white dashed 1px;
+	padding: 25px 25px 25px 80px;
+	margin: 30px 250px 30px 30px;	
+}
+
+#elixirs {
+	text-align: center;
+	line-height: 1;
+	width: 200px;
+	background: url(../images/cocktail.gif) repeat-x;	
+	border: #007e7e, solid, thin;
+	padding: 0px 20px 20px 20px;
+	margin: 0px 0px 0px 20px;
+	float: right;
+}
+
+#elixirs h1 {
+	coloer: black;
+}
+
+#elixirs h2 {
+	color: #d12c47;
+}
+
+.cd{
+  font-style: italic;	
+}
+
+.artist {
+	font-weight: bold;
+}
+
+#elixirs a:link {
+	color: #007e7e;
+}
+
+#elixirs a:visited {
+	color: #333333;
+}
+
+#elixirs a:hover {
+	color: #0d5353;
+	background: #f88396;
+}
+
+a:link {
+	color: #007e7e;
+}
+
+a:visited {
+	color: #333333;
+}
+#my {
+	font-size: 50%;
+	text-align: center;
+	line-height: normal;
+	margin-top: 30px;
+}

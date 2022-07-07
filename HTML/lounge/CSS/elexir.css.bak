@@ -1,0 +1,48 @@
+body {
+     font: small/1.6em Verdana, Helvetica, Arial, sans-serif;	
+     text-align: center;
+	 background: url(../images/cocktail.gif);	
+	 font-weight: normal;
+}
+
+#elexir {
+	 font-weight: bolder;
+	 border: #007e7e double thick;
+	 margin-left: auto;
+	 margin-right: auto;
+}
+h1 {
+  font-size: 150%;
+  color: #007e7e;
+}
+h2 {
+	font-size: 120%;
+	color: #d12c47;
+}
+
+#elexir a:link {
+	color: #007e7e;
+}
+
+#elexir a:visited {
+	color: #333333;
+}
+
+#elexir a:hover {
+	color: #0d5353;
+	background: #f88396;
+}
+
+#rip{
+	font-size: 50%;
+	line-height: normal;
+	margin-top: 30px;
+}
+
+#valid {
+	float: left;
+}
+
+#my {
+	text-align: center;
+}

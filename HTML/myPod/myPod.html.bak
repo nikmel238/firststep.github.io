@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/html1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+     <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+         <title>myPod</title>
+             <style type="text/css">
+                  body { background-color: #4DC9FF;
+                  margin-left: 20%;
+                  margin-right: 20%;
+                  border: 10px dotted gray;
+                  padding: 10px 10px 10px 10px;
+                  font-family: sans-serif;
+             </style>
+     </head>
+ 
+     <body>
+         <p><img src="logo/mypod.jpeg" alt="Логотип" /></p>
+         <h1>Добро пожаловать в myPod</h1>
+         <p>Добро пожаловать туда, где можно похвастаться своим iPod и рассказать, где вы с ним были. Хотите повеселиться вместе с нами? Вам для этого нужен любой iPod: от ранней классической версии до самой современной нановерсии - самого маленького iPod с фотографиями лучшего качетсва и цифровой камерой. Просто сфотографируйте свой iPod в любимом месте, и мы будем рады поместить этот снимок на нашем сайте. Итак чего вы ждете???</p>
+         <h2>Сиэтл, Вашингтон</h2>
+         <p>Я и мой iPod в Сиэтле! Здесь видны дождевые облака и башня Спейс Нидл. И не видно 628 кафе.</p>
+         <p>
+             <a href="html/seattle_med.html">
+                 <img src="thumbnails/seattle_med.jpg" alt="Мой iPod в Сиэтле, Вашингтон" />
+             </a>
+             <a href="html/seattle_shuffle.html">
+                 <img src="thumbnails/seattle_shuffle.jpg" alt="Мой iPod в Сиэтле, Вашингтон" />
+             </a>
+             <a href="html/seattle_downtown.html">
+                 <img src="thumbnails/seattle_downtown.jpg" alt="Мой iPod в бизнес- центре Сиэтле, Вашингтон" />
+             </a>
+         </p>
+         <h2>Бирмингем, Англия</h2>
+         <p>Это несколько фотографий из Бирмингема. Мы повстречали здесь несколько людей, страстно влюбленных в свой iPod. Взгляниет на классические британские красные телефонные будки!</p>
+         <p>
+             <a href="html/britain.html">
+                 <img src="thumbnails/britain.jpg" alt="Мой iPod в телефонной будке, Бирмингем" />
+             </a>
+             <a href="html/applestore.html">
+                 <img src="thumbnails/applestore.jpg" alt="Мой iPod в Apple Store, Бирмингем" />
+             </a>
+         </p>
+ 	     <p>
+             <a href="../index.html">Назад на Главную страницу</a>
+         </p>
+
+     </body>
+ 
+</html>

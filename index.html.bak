@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/html1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+     <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title> Первые шаги </title>
+            <style type="text/css">
+                   body {
+                         background-color: #4DC9FF;
+                         margin-left: 20%;
+                         margin-right: 20%;
+                         border: 10px dotted gray;
+                         padding: 10px 10px 10px 10px;
+                         font-family: sans-serif;
+                   }
+            </style>
+      </head>
+      
+      <body>
+             <h1> Перечень созданных сайтов </h1>
+             <ol>
+                <li><a href="lounge/lounge.html"> Head First </a></li>
+                <li><a href="Starbuzz/Starbuzz.html"> Кафе Startbuzz </a></li>
+                <li><a href="journal/journal.html"> На скутере по США </a></li>
+				<li><a href="myPod/myPod.html"> myPod</a></li>
+                <li><a href="dop/dop.html">Проверка команд </a></li>
+             </ol>
+	     <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Strict" height="31" width="88" /></a>
+  </p>
+      </body>
+</html>

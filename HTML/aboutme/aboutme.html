@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+		<title>О себе</title>
+		<meta charset="UTF-8">
+		<link type="text/css" rel="stylesheet" href="../../css/aboutme.css">
+  </head>
+  <body>
+		<div id="header">
+			<h1>Теодор Драйзер</h1>
+			<h2 class="header-title">Миллиордер, плейбой, филандроп</h2>
+			<p> 
+				Для связи со мной используй почту:<a href="iamgey@google.com">iamgey@google.com</a>
+				или <a href="https://vk.com/id444828442">Мою социальную сеть</a>
+			</p>
+		</div>
+
+		<div id="main">
+			<p>Если б птички были пчелами, то они бы непочем и никогда бы неподумали, так высоко строить ДОООООООООМ.</p>
+			<h2>Опыт работы</h2>
+			<p>Работаю 24/7 с 6 лет:</p>
+			<ol>
+				<li>Секретная группировка <q>Мстители</q></li>
+				<li>Много где еще, не помню</li>
+			</ol>
+			<h2>Образование</h2>
+			<p>Учусь 24/7 с 5 лет, супер высшее образование</p>
+			<h2>Другие навыки и увлечения</h2>
+			<ul>
+				<li>Художник</li>
+				<li>Врунишка</li>
+			</ul>
+		</div>
+
+		<script>
+			function stopWatch () {
+				let startTime = Date.now ();
+				
+				function getDelay () {
+					let elapsedTime = Date.now () - startTime;
+					alert(elapsedTime);
+				}
+				
+				return getDelay;
+			}
+			
+			let timer = stopWatch ();
+			for (let i = 0; i < 10000000; i++) {
+				let foo = Math.random() * 10;
+			}
+
+			timer ();
+		</script>
+		
+		<div id="footer">
+			<p>Т. Драйзер</p>
+			<p>Галактика, Лимпомпоиня, 3/1. Тел: 8 (800) 555 35 35</p>
+		</div>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link type="text/css" rel="stylesheet" href="CSS/starbuzz.css">
+	<link type="text/css" rel="stylesheet" href="CSS/styledform.css">
+    <title>The Starbuzz Bean Machine</title>
+  </head>
+  <body>
+    <h1>The Starbuzz Bean Machine</h1>
+    <h2>Заполните следующую форму и нажмите кнопку Отправить, чтобы оформить заказ</h2>
+    <form action="http://www.starbuzzcoffee.com/processorder.php" method="POST">
+	     <table>
+		   <tr>
+	         <th> Выберите кофе: </th>
+		     <td>
+			     <select name="beans" multiple="multiple">
+			     <option value="House Blend">Домашняя смесь</option>
+				 <option value="Bolivia">Боливия</option>
+				 <option value="Guatemala">Гватемала</option>
+				 <option value="Kenya">Кения</option>				 
+			   </select>
+			 </td>
+		   </tr>
+		   <tr>
+			    <th> Тип: </th>
+		        <td>
+				 <input type="radio" name="beantype" value="Зерна" checked="checked" />Кофе в зернах<br />
+		 	     <input type="radio" name="beantype" value="Молотый" />Молотый кофе
+		        </td>
+		   </tr>
+		   <tr>
+			   <th>Дополнительные услуги: </th>
+			   <td>
+		         <input type="checkbox" name="extras[]" value="упаковка" />Подарочная упаковка<br />
+			     <input type="checkbox" name="extras[]" value="каталог" checked="checked" />Доставка
+			     каталога вместе с заказом
+			   </td>
+		   </tr>  
+	       <tr>
+		      <th>Доставить по адресу: </th>
+		      <td> 
+                <table>			  
+   		         <tr>
+				    <th> <label for="lfname"> Имя: </label> </th>
+					<td>
+					    <input id="lfname" type="text" name="name" />
+					</td>
+				 </tr>
+   		         <tr>
+				    <th>  Адрес: </th>
+					<td>
+					    <input type="text" name="address" />
+					</td>
+				 </tr>
+   		         <tr>
+				    <th> Город: </th>
+					<td>
+					    <input type="text" name="zip" />
+					</td>
+				 </tr>
+   		         <tr>
+				    <th> Страна: </th>
+					<td>
+					    <input type="text" name="city" />
+					</td>
+				 </tr>
+   		         <tr>
+				    <th> Индекс: </th>
+					<td>
+					    <input type="password" name="zip" />
+					</td>
+				 </tr>
+				</table>
+			  </td>
+	       </tr>
+		    <tr>
+			     <th> Отправить файл: </th>
+				 <td>
+					 <input type="file" name="doc" />
+				 </td>
+		   </tr>
+		   <tr>
+			   <th> Комментарий клиентов: </th>
+			   <td>
+		         <textarea name="comments" rows="10" cols="48"></textarea>
+			   </td>
+		   </tr>
+		   <tr>
+		       <th></th>
+			   <td>
+		         <input type="submit" value="Заказать сейчаc" />
+			   </td>
+		   </tr>
+	     </table>
+	</form>
+  </body>
+</html>
+
