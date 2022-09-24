@@ -1,61 +1,50 @@
-/* mightygumball.js */
+/* JS для MightyGimball.html */
 /*
  * get the content of a JSON file using Ajax 
  *
  */
 
+// свойство позволяющее активировать скрипты после полной загрузки страницы
 window.onload = init;
 
+// создаем функцию init, которая содержит в себе функцию getSales
 function init() {
 	getSales();
 }
 
-//
-// This function is written using XMLHttpRequest Level 1, so if you're
-// using IE or Opera, or a really old version of Safari, Firefox or
-// Chrome, you can use this instead of Level 2 (below).
-//
-function getSales_XHRv1() {
-	// change the URL to match the location where you
-	// put the sales.json file
-	var url = "http://localhost/gumball/sales.json";
-	var request = new XMLHttpRequest();
-	request.open("GET", url);
-	request.onreadystatechange = function() {
-		if (request.readyState == 4 && request.status == 200) {
-			updateSales(request.responseText);
-		}
-	};
-	request.send(null);
-}
-
-//
-// With XMLHttpRequest Level 2 (implemented in new versions of Firefox, Safari
-// and Chrome) you can check progress and check for the "load" event with the
-// onload event handler instead of checking the onreadystatechange
-//
 function getSales() {
-	// change the URL to match the location where you
-	// put the sales.json file
-	var url = "http://localhost/gumball/sales.json";
+
+	// задаем переменную с указанием адреса программы на сервере
+	var url = "http://gumball.wickedlysmart.соm/gumball/gumball.html";
+	// создаем объект и присваиваем его переменной
 	var request = new XMLHttpRequest();
+	// используем метод open, для обращения к программе на сервере, используя HTTP запрос GET
 	request.open("GET", url);
+	// создаем обработчик, который при получении кода 200 (ответ сервера, что все ОК), запускает функцию updateSales
 	request.onload = function() {
 		if (request.status == 200) {
 			updateSales(request.responseText);
 		}
 	};
+	// с помощью метода send отправляем запрос на сервер, при этом ничего не передаем ему
 	request.send(null);
 }
 
 function updateSales(responseText) {
+	// извлекаем из HTML элемент с id = sales
 	var salesDiv = document.getElementById("sales");
+	// создаем переменную sales, и с помощью метода parse преобразует полученную строку в объект (массив)
 	var sales = JSON.parse(responseText);
+	// создаем цикл, и для каждого элемента массива ...
 	for (var i = 0; i < sales.length; i++) {
 		var sale = sales[i];
+		// создаем элемент div в HTML
 		var div = document.createElement("div");
+		// обращаемся к атрибуту class и присваиваем ему значение saleItem
 		div.setAttribute("class", "saleItem");
+		// образуем содержимое для элемента div
 		div.innerHTML = sale.name + " sold " + sale.sales + " gumballs";
+		// определяем элемент div как дочерний
 		salesDiv.appendChild(div);
 	}
 }
