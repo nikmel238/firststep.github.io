@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>TweetShirt</title>
+  <style>
+    body {
+      font-family: Verdana, Tahoma, sans-serif;
+      padding: 10px;
+      margin: 10px;
+      background-color: azure;
+    }
+    canvas {
+      /* задаем элементу границу */
+      border: solid 1px black;   
+    }
+
+   textarea {
+      width: 600px;
+      height: 100px;
+      padding-top: 10px;
+      margin-top: 15px;
+    }
+  </style>
+  <script src = "js/tweetshirt.js"></script>
+</head>
+<body>
+  <h1>TweetShirt</h1>
+  <canvas id = "tshirtCanvas" width = "600" height = "200"></canvas>
+  <form>
+    <p>
+      <label for = "backgroundColor">Выберите цвет заднего фона:</label>
+      <select id = "backgroundColor">
+        <option value = "white" selected = "selected">Белый</option>
+        <option value="pink">Розовый</option>
+      </select>
+    </p>
+    <p>
+      <label for="shape">Выберите вид фигур:</label>
+      <select id="shape">
+        <option value="none" selected = "selected">Без фигур</option>
+        <option value="circles">Круг</option>
+        <option value="squares">Квадрат</option>
+        <option value="triangles">Треугольник</option>
+      </select>
+    </p>
+    <p>
+      <label for="foregroundColor">Выберите цвет текста:</label>
+      <select id="foregroundColor">
+        <option value="black" selected="selected">Черный</option>
+        <option value="purple">Фиолетовый</option>
+      </select>
+    </p>
+    <p>
+      <label for="tweets">Введите необходимый текст:</label> <br>
+      <textarea id="tweets">Твиттер заблокирован, пишите сами "твиты"</textarea>
+    </p>
+    <p>
+      <input type="button" id="previewButton" value="Предварительный просмотр">
+    </p>
+  </form>
+  
+</body>
+</html>
