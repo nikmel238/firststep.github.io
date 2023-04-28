@@ -1,0 +1,132 @@
+/* videobooth.css */
+
+/* main content */
+div#booth {
+	margin: auto; /* устанавливаем автоматические поля */
+	width: 1100px; /* устанавливаем ширину блока */
+}
+
+div#console {
+	position: relative; /* устанавливаем относительное позиционирование */
+	background: url(../images/videoformfactor.jpg) no-repeat top left; /* устанавливаем задний фон с параметрами */
+	width: 1100px; /* устанавливаем ширину блока */
+	height: 981px; /* устанавливаем высоту блока */
+	top: 0px;	/* устанавливаем положение верхнего края */
+	left: 0px; /* устанавливаем положение левого края */
+}
+
+/* video */
+div#videoDiv {
+	position: relative; /* устанавливаем относительное позиционирование */
+	width: 720px; /* устанавливаем ширину блока */
+	height: 480px; /* устанавливаем высоту блока */
+	top: 180px; /* устанавливаем положение верхнего края */
+	left: 190px;	/* устанавливаем положение левого края */
+}
+video {
+	background-color: black; /* устанавливаем задний фон с параметрами */
+}
+div#videoDiv canvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+canvas#buffer {
+	display: none;
+}
+
+/* dashboard */
+div#dashboard {
+	position: absolute; /* устанавливаем относительное позиционирование */
+	top: 844px; /* устанавливаем положение верхнего края */
+	left: 130px; /* устанавливаем положение левого края */
+}
+
+a.effect, a.control, a.videoSelection {
+	display: block; /* начинается с новой строки и занимает заданную ширину */
+	width: 64px; /* устанавливаем ширину блока */
+	height: 56px; /* устанавливаем высоту блока */
+}
+
+div#effects {
+	position: absolute;
+	background: url(../images/effectbuttons.png) no-repeat top left;
+	top: 0px;
+	left: 0px;
+	width: 259px;
+	height: 56px;
+}
+a#normal {
+	position: relative;
+	width: 68px;
+	top: 0px;
+}
+a#western {
+	position: absolute;
+	width: 62px;
+	top: 0px;
+	left: 68px;
+}
+a#noir {
+	position: absolute;
+	top: 0px;
+	left: 130px;
+}
+a#scifi {
+	position: absolute;
+	top: 0px;
+	left: 194px;
+}
+
+div#controls {
+	position: absolute;
+	background: url(../images/playpausemute.png) no-repeat top left;
+	top: 0px;
+	left: 350px;
+	width: 259px;
+	height: 56px;
+}
+a#play {
+	position: relative;
+	top: 0px;
+}
+a#pause {
+	position: absolute;
+	top: 0px;
+	left: 64px;
+}
+a#loop {
+	position: absolute;
+	top: 0px;
+	left: 128px;
+}
+a#mute {
+	position: absolute;
+	top: 0px;
+	left: 192px;
+}
+
+div#videoSelection {
+	position: absolute;
+	background: url(../images/video1video2buttons.png) no-repeat top left;
+	top: 0px;
+	left: 700px;
+	width: 137px;
+	height: 56px;
+}
+a#video1 {
+	position: relative;
+	width: 68px;
+	top: 0px;
+}
+a#video2 {
+	position: absolute;
+	top: 0px;
+	width: 70px;
+	left: 68px;
+}
+
+a:hover {
+	cursor: pointer; /* курсор в виде руки при наведении на элемент */
+}
+
