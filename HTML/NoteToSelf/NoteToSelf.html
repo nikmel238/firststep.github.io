@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Бумажные заметки</title>
+    <link rel="stylesheet" href="css/notetoself.css">
+    <script src="js/notetoself.js"></script>
+  </head>
+  
+  <body>
+    <form id="form">
+      <label for="note_color">Цвет заметки: </label>
+      <select id="note_color">
+        <option value="LightGoldenRodYellow">Желтый</option>
+        <option value="PaleGreen">Зеленый</option>
+        <option value="LightPink">Розовый</option>
+        <option value="LightBlue">Синий</option>
+      </select>
+      <a href="../../index.html" title="Переход на главную страницу"><img src="images/house.png" width="50" height="25"></a>
+      <p>
+        <label id="text" for="note_text">Содержимое заметки: </label>
+        <input type="button" id="add_button" value="Добавить заметку">
+       </p>
+      <p><textarea id="note_text"  rows="5" cols="50"  placeholder = "Введите содержимое заметки" ></textarea></p>
+      
+      
+    </form>
+    <ul id="stickies"></ul>
+    
+  </body>
+</html>
