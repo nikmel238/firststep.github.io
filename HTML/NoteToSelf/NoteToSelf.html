@@ -9,6 +9,7 @@
   
   <body>
     <form id="form">
+      
       <label for="note_color">Цвет заметки: </label>
       <select id="note_color">
         <option value="LightGoldenRodYellow">Желтый</option>
@@ -16,15 +17,17 @@
         <option value="LightPink">Розовый</option>
         <option value="LightBlue">Синий</option>
       </select>
-      <a href="../../index.html" title="Переход на главную страницу"><img src="images/house.png" width="50" height="25"></a>
+      
+      <a href="../../index.html" title="Переход на главную страницу"><img src="images/house.png" width="130" height="40"></a>
+      
       <p>
         <label id="text" for="note_text">Содержимое заметки: </label>
         <input type="button" id="add_button" value="Добавить заметку">
-       </p>
+      </p>
+      
       <p><textarea id="note_text"  rows="5" cols="50"  placeholder = "Введите содержимое заметки" ></textarea></p>
-      
-      
     </form>
+
     <ul id="stickies"></ul>
     
   </body>
