@@ -9,24 +9,36 @@
   
   <body>
     <form id="form">
-      
-      <label for="note_color">Цвет заметки: </label>
-      <select id="note_color">
-        <option value="LightGoldenRodYellow">Желтый</option>
-        <option value="PaleGreen">Зеленый</option>
-        <option value="LightPink">Розовый</option>
-        <option value="LightBlue">Синий</option>
-      </select>
-      
-      <a href="../../index.html" title="Переход на главную страницу"><img src="images/house.png" width="130" height="40"></a>
-      
-      <p>
-        <label id="text" for="note_text">Содержимое заметки: </label>
-        <input type="button" id="add_button" value="Добавить заметку">
-      </p>
-      
-      <p><textarea id="note_text"  rows="5" cols="50"  placeholder = "Введите содержимое заметки" ></textarea></p>
-    </form>
+      <table>
+        <tr>
+          <td>
+            <label for="note_color">Цвет заметки: </label>
+            <select id="note_color">
+              <option value="LightGoldenRodYellow">Желтый</option>
+              <option value="PaleGreen">Зеленый</option>
+              <option value="LightPink">Розовый</option>
+              <option value="LightBlue">Синий</option>
+            </select>
+          </td>
+          <td>
+            <a href="../../index.html" title="Переход на главную страницу"><img src="images/house.png" width="130" height="40"></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label id="text" for="note_text">Содержимое заметки: </label>
+          </td>
+          <td>
+            <input type="button" id="add_button" value="Добавить заметку">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <textarea id="note_text" rows="5" cols="50" placeholder="Введите содержимое заметки"></textarea>
+          </td>
+        </tr>
+      </table>
+      </form>
 
     <ul id="stickies"></ul>
     
