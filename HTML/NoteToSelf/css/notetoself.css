@@ -8,11 +8,32 @@ table {
 	margin-right: auto;
 }
 
-img{
-	float: right;
-}
 #add_button {
-	float: right;
+	width: 125px;
+	height: 120px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 120%;
+	white-space: pre-line;
+}
+
+select {
+	height: 40px;
+}
+
+.LightGoldenRodYellow {
+	background-color: LightGoldenRodYellow;
+}
+
+.PaleGreen {
+	background-color: PaleGreen;
+}
+
+.LightPink {
+	background-color: LightPink;
+}
+
+.LightBlue{
+	background-color: LightBlue;
 }
 /* sticky note */
 
